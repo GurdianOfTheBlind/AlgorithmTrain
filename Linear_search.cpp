@@ -9,10 +9,10 @@
 
 
 template <typename T>
-size_t linear_search(T* array, T x, size_t n);
+size_t linear_search(const T* array, T x, size_t n);
 
 template <typename T>
-void print_arr(T* array, size_t n);
+void print_arr(const T* array, size_t n);
 
 int main()
 {
@@ -46,7 +46,7 @@ int main()
 }
 
 template <typename T>
-size_t linear_search(T* array, T x, size_t n)
+size_t linear_search(const T* array, T x, size_t n)
 {
 	assert(n > 0);
 	size_t index = -1;
@@ -59,7 +59,7 @@ size_t linear_search(T* array, T x, size_t n)
 }
 
 template <typename T>
-void print_arr(T* array, size_t n)
+void print_arr(const T* array, size_t n)
 {
 	assert(n > 0);
 	for (size_t i = 0; i < n; i++)
